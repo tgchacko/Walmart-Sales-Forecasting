@@ -14,10 +14,18 @@
 [Data Preprocessing Steps and Inspiration](#data-preprocessing-steps-and-inspiration)
 
 [Forecasting of Weekly Sales](#forecasting-of-weekly-sales)
--[Results](#results)
--[Recommendations](#recommendations)
--[Limitations](#limitations)
--[References](#references)
+
+[Model Evaluation Metrics](#model-evaluation-metrics)
+
+[Results](#results)
+
+[Recommendations](#recommendations)
+
+[Limitations](#limitations)
+
+[Future Possibilities of the Project](#future-possibilities-of-the project)
+
+[References](#references)
 
 ### Project Overview
 
@@ -27,7 +35,7 @@ The objective of this project is to analyze Walmart sales data to extract meanin
 
 Walmart Sales Data: The primary dataset used for this analysis is the Walmart.csv file, containing detailed information about weekly sales across multiple Walmart stores.
 
-Walmart Dataset
+Walmart Dataset(https://github.com/tgchacko/Walmart-Sales-Forecasting/blob/main/Walmart.csv)
 
 ### Data Description
 
@@ -44,24 +52,28 @@ The dataset Walmart.csv contains various columns including:
 
 ### Tools
 
-  **Python: Data Cleaning and Analysis**
-        [Download Python](https://www.python.org/downloads/)
-  **Jupyter Notebook: For interactive data analysis and visualization**
-        [Install Jupyter](https://jupyter.org/install)
+**Python: Data Cleaning and Analysis**
 
+        [Download Python](https://www.python.org/downloads/)
+        
+**Jupyter Notebook: For interactive data analysis and visualization**
+
+        [Install Jupyter](https://jupyter.org/install)
+ 
 **Libraries**
 
 Below are the links for details and commands (if required) to install the necessary Python packages:
 
-    pandas: Go to Pandas Installation or use command: pip install pandas
-    numpy: Go to NumPy Installation or use command: pip install numpy
-    matplotlib: Go to Matplotlib Installation or use command: pip install matplotlib
-    seaborn: Go to Seaborn Installation or use command: pip install seaborn
-    scikit-learn: Go to Scikit-Learn Installation or use command: pip install scikit-learn
-    statsmodels: Go to Statsmodels Installation or use command: pip install statsmodels
-    pmdarima: Go to Pmdarima Installation or use command: pip install pmdarima
-    fbprophet: Go to Prophet Installation or use command: pip install fbprophet
-    tbats: Go to TBATS Installation or use command: pip install tbats
+Below are the links for details and commands (if required) to install the necessary Python packages:
+- **pandas**: Go to [Pandas Installation](https://pypi.org/project/pandas/) or use command: `pip install pandas`
+- **numpy**: Go to [NumPy Installation](https://pypi.org/project/numpy/) or use command: `pip install numpy`
+- **matplotlib**: Go to [Matplotlib Installation](https://pypi.org/project/matplotlib/) or use command: `pip install matplotlib`
+- **seaborn**: Go to [Seaborn Installation](https://pypi.org/project/seaborn/) or use command: `pip install seaborn`
+- **scikit-learn**: Go to [Scikit-Learn Installation](https://pypi.org/project/scikit-learn/) or use command: `pip install scikit-learn`
+- **statsmodels**: Go to [Statsmodels Installation](https://pypi.org/project/statsmodels/) or use command: `pip install statsmodels`
+- **pmdarima**: Go to [Pmdarima Installation](https://pypi.org/project/pmdarima/) or use command: `pip install pmdarima`
+- **fbprophet**: Go to [Prophet Installation](https://pypi.org/project/fbprophet/) or use command: `pip install fbprophet`
+- **tbats**: Go to [TBATS Installation](https://pypi.org/project/tbats/) or use command: `pip install tbats`
 
 ### EDA Steps
 
@@ -135,7 +147,7 @@ Before doing the EDA, we observed that there is a gap in the data for January 20
 
 
 ### Forecasting of Weekly Sales
-#### Time Series Forecasting Models
+### Time Series Forecasting Models
 
 1) ARIMA (AutoRegressive Integrated Moving Average)
    - Captures linear trends and seasonality.
@@ -153,14 +165,11 @@ Before doing the EDA, we observed that there is a gap in the data for January 20
    - Handles multiple seasonalities and complex patterns.
    - Robust in capturing diverse seasonal patterns.
 
-Model Evaluation Metrics
+### Model Evaluation Metrics
 
-    RMSE (Root Mean Squared Error)
-        Measures the average magnitude of the errors between predicted and observed values.
-    MAE (Mean Absolute Error)
-        Calculates the average absolute differences between predicted and observed values.
-    MAPE (Mean Absolute Percentage Error)
-        Expresses the average percentage difference between predicted and observed values.
+1) RMSE (Root Mean Squared Error): Measures the average magnitude of the errors between predicted and observed values.
+2) MAE (Mean Absolute Error): Calculates the average absolute differences between predicted and observed values.
+3) MAPE (Mean Absolute Percentage Error): Expresses the average percentage difference between predicted and observed values.
 
 ### Results
 
@@ -207,6 +216,6 @@ Incorporating these factors can provide a more comprehensive and accurate foreca
 
 ### References
 
-1) Hyndman, R. J., & Athanasopoulos, G. (2018). Forecasting: principles and practice. OTexts. Forecasting: principles and practice
-2) Time Series forecasting in Python: Time Series Forecasting in Python
-3) Time Series Forecasting TBATS: TBATS Time Series Forecasting
+1) Hyndman, R. J., & Athanasopoulos, G. (2018). Forecasting: principles and practice. OTexts. Forecasting: principles and practice(https://otexts.com/fpp2/)
+2) Time Series forecasting in Python: Time Series Forecasting in Python(https://www.methsoft.ac.cn/scipaper_files/document_files/Manning.Time.Series.Forecasting.in.Python.pdf)
+3) Time Series Forecasting TBATS: TBATS Time Series Forecasting(https://medium.com/analytics-vidhya/time-series-forecasting-using-tbats-model-ce8c429442a9)
