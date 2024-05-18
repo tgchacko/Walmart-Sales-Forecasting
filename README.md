@@ -23,7 +23,7 @@
 
 [Limitations](#limitations)
 
-[Future Possibilities of the Project](#future-possibilities-of-the project)
+[Future Possibilities of the Project](#future-possibilities-of-the-project)
 
 [References](#references)
 
