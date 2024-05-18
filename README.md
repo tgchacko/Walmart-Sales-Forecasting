@@ -15,6 +15,8 @@
 
 [Forecasting of Weekly Sales](#forecasting-of-weekly-sales)
 
+[Assumptions](#assumptions)
+
 [Model Evaluation Metrics](#model-evaluation-metrics)
 
 [Results](#results)
@@ -39,7 +41,7 @@ Walmart Dataset(https://github.com/tgchacko/Walmart-Sales-Forecasting/blob/main/
 
 ### Data Description
 
-The dataset Walmart.csv contains various columns including:
+The dataset, named "Walmart.csv", comprises 6,435 rows and 8 columns, each offering valuable insights into the weekly sales dynamics at Walmart across 45 stores. The dataset Walmart.csv contains various columns including:
 
 1) Store: Store number (categorical variable ranging from 1 to 45)
 2) Date: The week of sales (temporal dimension spanning from February 5, 2010, to October 26, 2012)
@@ -52,13 +54,13 @@ The dataset Walmart.csv contains various columns including:
 
 ### Tools
 
-**Python: Data Cleaning and Analysis**
+- Python: Data Cleaning and Analysis
 
-        [Download Python](https://www.python.org/downloads/)
-        
-**Jupyter Notebook: For interactive data analysis and visualization**
+    [Download Python](https://www.python.org/downloads/)
 
-        [Install Jupyter](https://jupyter.org/install)
+- Jupyter Notebook: For interactive data analysis and visualization
+
+    [Install Jupyter](https://jupyter.org/install)
  
 **Libraries**
 
@@ -95,7 +97,7 @@ Addressing Outliers: Outliers are not being addressed since we are considering t
 
 3. #### Exploratory Data Analysis (EDA):
 
-### Data Gaps: 
+**Data Gaps**: 
 Before doing the EDA, we observed that there is a gap in the data for January 2010 and for November, December 2012. The absence of data for these three months can impact our ability to perform accurate yearly, quarterly, and monthly comparisons. The distribution of data is thus affected. It is essential to consider this data gap while conducting analyses that involve these specific time periods.
 
 ## Distribution of Data:
@@ -149,21 +151,43 @@ Before doing the EDA, we observed that there is a gap in the data for January 20
 ### Forecasting of Weekly Sales
 ### Time Series Forecasting Models
 
-1) ARIMA (AutoRegressive Integrated Moving Average)
+1) **ARIMA (AutoRegressive Integrated Moving Average)**
    - Captures linear trends and seasonality.
    - Suitable for stationary data.
-2) SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous factors)
+2) **SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous factors)**
    - Extends ARIMA by incorporating external factors.
    - Suitable for data influenced by external variables like holidays.
-3) AutoARIMA
+3) **AutoARIMA**
    - Automates the selection of the optimal ARIMA model.
    - User-friendly and efficient.
-4) Prophet
+4) **Prophet**
    - Developed by Facebook for handling seasonality, holidays, and special events.
    - Flexible and easy to use.
-5) TBATS (Trigonometric Seasonal Decomposition of Time Series)
+5) **TBATS (Trigonometric Seasonal Decomposition of Time Series)**
    - Handles multiple seasonalities and complex patterns.
    - Robust in capturing diverse seasonal patterns.
+  
+### Assumptions
+
+1. **Stationarity Assumption**
+
+    **Definition**: The statistical properties of the time series data, such as mean and variance, do not change over time.
+    **Rationale**: Many time series forecasting models, including ARIMA, perform better on stationary data. Ensuring or achieving stationarity enhances model effectiveness.
+
+2. **Linearity Assumption**
+
+    **Definition**: The relationships between variables, including past and future values in the time series, can be adequately represented using linear models.
+    **Rationale**: Models like ARIMA and SARIMAX are designed based on linear relationships. Assuming linearity simplifies the modeling process.
+
+3. **Independence Assumption**
+
+    **Definition**: Each observation in the time series is assumed to be independent of others.
+    **Rationale**: Time series models often assume independence to prevent past observations from unduly influencing future ones. Violating this assumption can lead to biased model performance.
+
+4. **Identifiability Assumption**
+
+    **Definition**: The parameters of the chosen forecasting model can be uniquely determined from the available data.
+    **Rationale**: Ensuring that the parameters are identifiable is crucial for accurate estimation in models like ARIMA and SARIMAX. This supports the reliability of the model's parameter estimates.
 
 ### Model Evaluation Metrics
 
@@ -171,8 +195,9 @@ Before doing the EDA, we observed that there is a gap in the data for January 20
 2) MAE (Mean Absolute Error): Calculates the average absolute differences between predicted and observed values.
 3) MAPE (Mean Absolute Percentage Error): Expresses the average percentage difference between predicted and observed values.
 
-### Results
+### Results 
 
+**Considering Store 24**
 - The TBATS model achieved the best performance metrics (lowest MAPE, RMSE, and MAE) for Store No. 24.
 - The analysis highlighted significant trends and seasonal patterns in weekly sales.
 - The impact of external factors like unemployment, temperature, and CPI on sales was explored.
@@ -190,7 +215,7 @@ Before doing the EDA, we observed that there is a gap in the data for January 20
 - External Factors: Other factors not included in the analysis, such as social behavior and political decisions, can significantly impact sales.
 
 ### Future Possibilities of the Project
-1. Advanced Predictive Modeling
+1. **Advanced Predictive Modeling**
 
 Investigate advanced forecasting models such as:
 a) NBEATS (Neural Basis Expansion Analysis for Time Series)
@@ -202,11 +227,11 @@ f) KATS (Kit for Automated Time Series analysis)
 
 These models offer potential for enhanced accuracy in sales forecasting.
 
-2. Store-Specific Analysis
+2. **Store-Specific Analysis**
 
 Conduct comprehensive analyses for each of the 45 Walmart stores to uncover unique patterns and optimize forecasting models tailored to individual store characteristics. This approach can help identify specific trends and factors influencing sales at each location.
 
-3. External Factors Integration
+3. **External Factors Integration**
 Incorporate Additional Factors: Consider integrating additional external factors into the forecasting models, such as:
 1) Economic Indicators: GDP, inflation rates, etc.
 2) Social Events: Festivals, public holidays, etc.
@@ -216,6 +241,6 @@ Incorporating these factors can provide a more comprehensive and accurate foreca
 
 ### References
 
-1) Hyndman, R. J., & Athanasopoulos, G. (2018). Forecasting: principles and practice. OTexts. Forecasting: principles and practice(https://otexts.com/fpp2/)
-2) Time Series forecasting in Python: Time Series Forecasting in Python(https://www.methsoft.ac.cn/scipaper_files/document_files/Manning.Time.Series.Forecasting.in.Python.pdf)
-3) Time Series Forecasting TBATS: TBATS Time Series Forecasting(https://medium.com/analytics-vidhya/time-series-forecasting-using-tbats-model-ce8c429442a9)
+1) [Hyndman, R. J., & Athanasopoulos, G. (2018). Forecasting: principles and practice. OTexts. Forecasting: principles and practice](https://otexts.com/fpp2/)
+2) [Time Series forecasting in Python: Time Series Forecasting in Python](https://www.methsoft.ac.cn/scipaper_files/document_files/Manning.Time.Series.Forecasting.in.Python.pdf)
+3) [Time Series Forecasting TBATS: TBATS Time Series Forecasting](https://medium.com/analytics-vidhya/time-series-forecasting-using-tbats-model-ce8c429442a9)
