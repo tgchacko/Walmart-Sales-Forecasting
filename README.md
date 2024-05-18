@@ -1,7 +1,7 @@
 # Walmart Sales Forecasting
 
 ## Table of Contents
-. [Project Overview](#project-overview)
+[Project Overview](#project-overview)
 [Data Sources](#data-sources)
 [Data Description](#data-description)
 
