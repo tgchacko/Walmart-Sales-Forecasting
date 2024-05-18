@@ -107,6 +107,7 @@ Before doing the EDA, we observed that there is a gap in the data for January 20
 **Distibution of data**:
 
 1) **Across Years**
+
 ![Picture3](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/38b2ede2-e723-49bb-923a-52411c0db00a)
 
 2) **Across Quarters**
