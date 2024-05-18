@@ -104,7 +104,7 @@ Addressing Outliers: Outliers are not being addressed since we are considering t
 **Data Gaps**: 
 Before doing the EDA, we observed that there is a gap in the data for January 2010 and for November, December 2012. The absence of data for these three months can impact our ability to perform accurate yearly, quarterly, and monthly comparisons. The distribution of data is thus affected. It is essential to consider this data gap while conducting analyses that involve these specific time periods.
 
-**Distibution of data**:
+**Distibution of Data**:
 
 1) **Across Years**
 
@@ -118,7 +118,7 @@ Before doing the EDA, we observed that there is a gap in the data for January 20
  
 ![Picture5](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/0a087e49-707f-4055-9c97-654f4e4ab664)
 
-4) **Distribution of data - pie charts**
+4) **Distribution of Data - Pie Charts**
 
 ![Picture6](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/ccbe3b93-0f19-4cb6-ac88-88d02fe71c60)
 
@@ -136,6 +136,7 @@ Before doing the EDA, we observed that there is a gap in the data for January 20
 
 Store No. 20 has the highest sales, whereas store No. 33 has the lowest sales.
 
+
 **Total Yearly Sales**
 
 ![Picture11](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/5e33fb00-e5b7-40e5-b7ca-1e8acc5eefa1)
@@ -146,7 +147,7 @@ Store No. 20 has the highest sales, whereas store No. 33 has the lowest sales.
 
 As there is a gap in the data for January 2010 and for November, December 2012, we would average it out to show for these months which month has the highest sales. After doing the necessary adjustment, we can see that December is the best performing month and February is the worst performing month.
 
-**Top 5 months with highest and lowest sales**
+**Top 5 months with Highest and Lowest Sales**
 
 ![Picture13](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/2b5e61ee-646f-4d01-8f14-dc01e6237211)
 
@@ -156,7 +157,7 @@ As there is a gap in the data for January 2010 and for November, December 2012, 
 
 If we make the adjustment by dividing the sales with the actual number of working days and holidays, we can see the daily sales on a holiday is higher.
 
-**Total Sales per 1 Holiday / 1 Non Holiday**
+**Average Daily Sales on a Holiday / a Non Holiday**
 
 ![Picture15](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/807ceb7c-a301-4f88-9187-05e16e4b0a57)
 
