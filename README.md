@@ -104,88 +104,100 @@ Addressing Outliers: Outliers are not being addressed since we are considering t
 **Data Gaps**: 
 Before doing the EDA, we observed that there is a gap in the data for January 2010 and for November, December 2012. The absence of data for these three months can impact our ability to perform accurate yearly, quarterly, and monthly comparisons. The distribution of data is thus affected. It is essential to consider this data gap while conducting analyses that involve these specific time periods.
 
+**Distibution of data**:
+
+1) **Across Years**
 ![Picture3](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/38b2ede2-e723-49bb-923a-52411c0db00a)
 
+2) **Across Quarters**
+ 
 ![Picture4](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/0d9d0173-b8aa-497a-9beb-eb4c2cf252a1)
 
+3) **Across Holidays/Non Holidays)**
+ 
 ![Picture5](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/0a087e49-707f-4055-9c97-654f4e4ab664)
+
+4) **Distribution of data - pie charts**
 
 ![Picture6](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/ccbe3b93-0f19-4cb6-ac88-88d02fe71c60)
 
 ![Picture7](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/364be7fd-36ee-4231-bb16-32f34dc87ffd)
 
+**Top 5 Performing Stores**
+
 ![Picture8](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/ac671636-af2b-4ac9-ae25-de266d197da1)
 
 ![Picture9](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/2a727023-a0ee-4402-a52e-65ecf5c93544)
 
+**Worst 5 Performing Stores**
+
 ![Picture10](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/722c34fd-12bc-4ab6-bfd7-d300ef33f490)
+
+Store No. 20 has the highest sales, whereas store No. 33 has the lowest sales.
+
+**Total Yearly Sales**
 
 ![Picture11](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/5e33fb00-e5b7-40e5-b7ca-1e8acc5eefa1)
 
+**Total Monthly Sales**
+
 ![Picture12](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/742d6848-af48-4a24-94cd-a573a48371b7)
+
+As there is a gap in the data for January 2010 and for November, December 2012, we would average it out to show for these months which month has the highest sales. After doing the necessary adjustment, we can see that December is the best performing month and February is the worst performing month.
+
+**Top 5 months with highest and lowest sales**
 
 ![Picture13](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/2b5e61ee-646f-4d01-8f14-dc01e6237211)
 
+**Total Holiday/Non-Holiday Sales**
+
 ![Picture14](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/05beec3b-9edf-4165-ac29-95569e4ed83f)
+
+If we make the adjustment by dividing the sales with the actual number of working days and holidays, we can see the daily sales on a holiday is higher.
+
+**Total Sales per 1 Holiday / 1 Non Holiday**
 
 ![Picture15](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/807ceb7c-a301-4f88-9187-05e16e4b0a57)
 
+**Impact of Unemployment on Weekly Sales**
+
+The data indicates a noticeable decline in spending coinciding with the initiation of unemployment. Typically, an elevated unemployment index corresponds to a reduction in sales. However, in our dataset, the correlation between the unemployment rate index and weekly sales is relatively low, measuring at -0.106.
+
 ![Picture16](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/5d2d4b17-e19e-4fbd-b07c-e85299c303c0)
+
+**Impact of Temperature on Weekly Sales**
 
 ![Picture17](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/5b20f8cf-ad14-4ff7-b86a-bba717452891)
 
+The observed correlation of -0.063 between temperature and sales in Walmart suggests a weak negative relationship. Several factors could contribute to this low correlation:
+1) Seasonal Variations
+2) Diverse Product Range
+3) Regional Variations
+4) Consumer Behavior
+5) Multifactorial Influence
+
+**Impact of CPI on Weekly Sales**
+
+The observed low correlation of -0.072 between the Consumer Price Index (CPI) and sales indicates a weak relationship.
+
 ![Picture18](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/7eeeecd1-3515-4346-9ed9-901e0d0e5dc8)
+
+**Seasonal Trend of Weekly Sales**
 
 ![Picture19](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/3d908d41-5656-43d1-a07d-c7fe157ac7f4)
 
+Seasonal Trend in Weekly Sales: Sales are the highest in December, which can be attributed to several factors:
+1) Holiday Shopping Season
+2) Special Promotions and Discounts
+3) Winter Weather and Seasonal Products
+4) Year-End Clearance Sales
+5) Increased Consumer Spending
+6) Marketing and Advertising Campaigns
+7) Extended Store Hours
+
+**Trend Component, Seasonal Component, Residual Component of Weekly Sales**
+
 ![Picture20](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/95060897-bb11-4ec8-a927-25eb15326926)
-
-        Figure 6: Distribution of data for Walmart across years
-        Figure 7: Distribution of data for Walmart across quarters
-        Figure 8: Distribution of data across Holidays / Non-Holidays
-        Figure 9: Sales distribution over the years, months, weekday, quarterly, working days / holidays
-
-    Store-wise Analysis:
-        Figure 10: Store wise Total Sales: Store No. 20 has the highest sales, whereas store No. 33 has the lowest sales. The sales difference between these two stores is shown.
-        Figure 11: Code for Top Performing Stores and Lowest Performing Store
-
-    Yearly Analysis:
-        Figure 12: Year wise Total Sales
-
-    Monthly Analysis:
-        Figure 13: Month wise Total Sales (without adjustment): As there is a gap in the data for January 2010 and for November, December 2012, we would average it out to show for these months which month has the highest sales. After doing the necessary adjustment, we can see that December is the best performing month and February is the worst performing month.
-        Figure 14: Code for Monthly Sales (without adjustment)
-
-    Holiday / Working Day Analysis:
-        Figure 15: Holiday / Working Day Total Sales (without adjustment): If we make the adjustment by dividing the sales with the actual number of working days and holidays, we can see the daily sales on a holiday is higher.
-        Figure 16: Code for Daily Holiday / Working Day Sales
-
-    Impact of Unemployment on Weekly Sales:
-        Figure 17: Impact of Unemployment on Sales: The data indicates a noticeable decline in spending coinciding with the initiation of unemployment. Typically, an elevated unemployment index corresponds to a reduction in sales. However, in our dataset, the correlation between the unemployment rate index and weekly sales is relatively low, measuring at -0.106.
-
-    Impact of Temperature on Weekly Sales:
-        Figure 18: Impact of Temperature on Sales: The observed correlation of -0.063 between temperature and sales in Walmart suggests a weak negative relationship. Several factors could contribute to this low correlation:
-            Seasonal Variations
-            Diverse Product Range
-            Regional Variations
-            Consumer Behavior
-            Multifactorial Influence
-
-    Impact of CPI on Weekly Sales:
-        Figure 19: Impact of CPI on Sales: The observed low correlation of -0.072 between the Consumer Price Index (CPI) and sales indicates a weak relationship.
-
-    Seasonal Trend of Weekly Sales:
-        Figure 20: Seasonal Trend in Weekly Sales: Sales are the highest in December, which can be attributed to several factors:
-            Holiday Shopping Season
-            Special Promotions and Discounts
-            Winter Weather and Seasonal Products
-            Year-End Clearance Sales
-            Increased Consumer Spending
-            Marketing and Advertising Campaigns
-            Extended Store Hours
-        Figure 21: Trend Component, Seasonal Component, Residual Component of Weekly Sales
-
-
 
 ### Forecasting of Weekly Sales
 ### Time Series Forecasting Models
