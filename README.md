@@ -37,7 +37,7 @@ The objective of this project is to analyze Walmart sales data to extract meanin
 
 Walmart Sales Data: The primary dataset used for this analysis is the Walmart.csv file, containing detailed information about weekly sales across multiple Walmart stores.
 
-Walmart Dataset(https://github.com/tgchacko/Walmart-Sales-Forecasting/blob/main/Walmart.csv)
+[Walmart Dataset](https://github.com/tgchacko/Walmart-Sales-Forecasting/blob/main/Walmart.csv)
 
 ### Data Description
 
@@ -51,6 +51,10 @@ The dataset, named "Walmart.csv", comprises 6,435 rows and 8 columns, each offer
 6) Fuel_Price: The regional fuel cost
 7) CPI: Consumer Price Index, indicating the average change in prices paid by consumers
 8) Unemployment: The unemployment rate in the region
+
+![Picture1](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/04943f90-1790-4d84-8fde-34bf35d8aa6c)
+
+![Picture2](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/6b067d21-749e-4390-bdd9-cb8bea280124)
 
 ### Tools
 
@@ -100,7 +104,42 @@ Addressing Outliers: Outliers are not being addressed since we are considering t
 **Data Gaps**: 
 Before doing the EDA, we observed that there is a gap in the data for January 2010 and for November, December 2012. The absence of data for these three months can impact our ability to perform accurate yearly, quarterly, and monthly comparisons. The distribution of data is thus affected. It is essential to consider this data gap while conducting analyses that involve these specific time periods.
 
-## Distribution of Data:
+![Picture3](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/38b2ede2-e723-49bb-923a-52411c0db00a)
+
+![Picture4](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/0d9d0173-b8aa-497a-9beb-eb4c2cf252a1)
+
+![Picture5](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/0a087e49-707f-4055-9c97-654f4e4ab664)
+
+![Picture6](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/ccbe3b93-0f19-4cb6-ac88-88d02fe71c60)
+
+![Picture7](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/364be7fd-36ee-4231-bb16-32f34dc87ffd)
+
+![Picture8](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/ac671636-af2b-4ac9-ae25-de266d197da1)
+
+![Picture9](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/2a727023-a0ee-4402-a52e-65ecf5c93544)
+
+![Picture10](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/722c34fd-12bc-4ab6-bfd7-d300ef33f490)
+
+![Picture11](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/5e33fb00-e5b7-40e5-b7ca-1e8acc5eefa1)
+
+![Picture12](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/742d6848-af48-4a24-94cd-a573a48371b7)
+
+![Picture13](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/2b5e61ee-646f-4d01-8f14-dc01e6237211)
+
+![Picture14](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/05beec3b-9edf-4165-ac29-95569e4ed83f)
+
+![Picture15](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/807ceb7c-a301-4f88-9187-05e16e4b0a57)
+
+![Picture16](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/5d2d4b17-e19e-4fbd-b07c-e85299c303c0)
+
+![Picture17](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/5b20f8cf-ad14-4ff7-b86a-bba717452891)
+
+![Picture18](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/7eeeecd1-3515-4346-9ed9-901e0d0e5dc8)
+
+![Picture19](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/3d908d41-5656-43d1-a07d-c7fe157ac7f4)
+
+![Picture20](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/95060897-bb11-4ec8-a927-25eb15326926)
+
         Figure 6: Distribution of data for Walmart across years
         Figure 7: Distribution of data for Walmart across quarters
         Figure 8: Distribution of data across Holidays / Non-Holidays
@@ -199,8 +238,13 @@ Before doing the EDA, we observed that there is a gap in the data for January 20
 
 **Considering Store 24**
 - The TBATS model achieved the best performance metrics (lowest MAPE, RMSE, and MAE) for Store No. 24.
+
+  ![Picture21](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/6a2b9f02-bfeb-4df0-8674-ff3a4ad8df12)
+
 - The analysis highlighted significant trends and seasonal patterns in weekly sales.
 - The impact of external factors like unemployment, temperature, and CPI on sales was explored.
+  
+![Picture22](https://github.com/tgchacko/Walmart-Sales-Forecasting/assets/169921893/8578bd40-b2a2-4357-bd57-ca6f6fe89b61)
 
 ### Recommendations
 
