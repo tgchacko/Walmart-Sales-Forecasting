@@ -3,8 +3,11 @@
 ## Table of Contents
 
 [Project Overview](#project-overview)
+
 [Data Sources](#data-sources)
+
 [Data Description](#data-description)
+
 -[Tools](#tools)
 -[EDA Steps](#eda-steps)
 -[Data Preprocessing Steps and Inspiration](#data-preprocessing-steps-and-inspiration)
